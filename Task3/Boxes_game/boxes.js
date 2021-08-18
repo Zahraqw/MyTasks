@@ -147,6 +147,6 @@ function display(){
     createRow();
    var tbl= document.getElementById("movment-table");
    tbl.style.display= "block";
-   tbl.setAttribute('class', 'table');
+   tbl.setAttribute('class', 'tbl');
     }
 }
