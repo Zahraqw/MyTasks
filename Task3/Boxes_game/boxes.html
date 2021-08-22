@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Boxes Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="boxes.css">
+    <script src="boxes.js"></script>
+</head>
+</head>
+
+<body>
+    <div id="border">
+        <div class="black-wrapper top-block">
+            <input type="text" placeholder="how many boxes you like to begin with ?" id="number-in">
+            <input type="submit" value="Start" id="start-btn" onclick="createBox()">
+        </div>
+
+        <div class="outer-box">
+            <div class="inner-1">
+                <span class="box-container" id="right-group"> </span>
+                <input type="submit" value="Move to right" class="btn-mov" id="right-btn" onclick="moveToRight()">
+            </div>
+
+            <div class="inner-2">
+                <span class="box-container" id="left-group"></span>
+                <input type="submit" value="Move to left" class="btn-mov" id="left-btn" onclick="moveToLeft()">
+            </div>
+        </div>
+
+        <input type="submit" value="Dispaly Data" id="dispaly-btn" onclick=" display()">
+        <div class="black-wrapper" id="bottom-div">
+            <label style="font-weight: bolder; color: white;">#</label>
+            <label class="lable-div ">Start From</label>
+            <label class="lable-div ">Movment to right</label>
+            <label class="lable-div ">Movment to left</label>
+        </div>
+        <div>
+            <table id="movment-table " class="tbl ">
+                <script>
+                    createRow()
+                </script>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

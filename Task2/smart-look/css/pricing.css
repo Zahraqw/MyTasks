@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(240, 78%, 98%);
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+/*.content-wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}*/
+
+.top-carve-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.top-carve {
+    width: 350px;
+    height: 560px;
+}
+
+.bottom-carve {
+    width: 350px;
+    height: 960px;
+}
+
+.bottom-carve-container {
+    position: absolute;
+    top: -100;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.annual-warpper {
+    color: hsl(234, 14%, 74%);
+    margin-right: 2em;
+}
+
+.monthly-wrapper {
+    color: hsl(234, 14%, 74%);
+    margin-left: 2em;
+}
+
+.first-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(233, 13%, 49%);
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 3px 6px 0 hsl(236, 50%, 90%);
+    text-align: center;
+    border-radius: 1em;
+    padding: 10px 45px 10px 45px;
+    background-image: linear-gradient(to bottom, white, white);
+}
+
+.card-title {
+    margin-top: 2em;
+    color: hsl(233, 13%, 49%);
+}
+
+.price {
+    color: hsl(232, 13%, 33%);
+    font-size: 4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.35em;
+}
+
+.currency {
+    font-size: 0.6em;
+    vertical-align: 10px;
+}
+
+.card-info {
+    padding: 15px 6px 15px 6px;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: hsl(234, 14%, 88%);
+    color: #707188;
+}
+
+.link_bttn {
+    border-radius: 0.3em;
+    text-decoration: none;
+    padding: 9px 60px 9px 60px;
+    background-image: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    font-size: 15px;
+}
+
+.card-bnttn {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 2em 18em 2em 18em;
+}
+
+.card:hover {
+    background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+    padding: 40px;
+}
+
+.card:hover .card-title {
+    color: white;
+}
+
+.card:hover .card-info {
+    color: white;
+    border-width: 0.1px;
+    border-color: #a3a8f0;
+}
+
+.card:hover .price {
+    color: white;
+}
+
+.card:hover .link_bttn {
+    color: #696fdd;
+    background-image: linear-gradient(to bottom, white, white);
+}
+
+.active-card {
+    box-shadow: 0 3px 6px 0 #d9daf2;
+    background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+    text-align: center;
+    border-radius: 1em;
+    padding: 40px;
+}
+
+.active-card .card-title {
+    color: white;
+}
+
+.active-card .card-info {
+    color: white;
+    border-width: 0.1px;
+    border-color: #a3a8f0;
+}
+
+.active-card .price {
+    color: white;
+}
+
+.active-card .link_bttn {
+    color: #696fdd;
+    background-image: linear-gradient(to bottom, white, white);
+}
+
+.card-container:hover .card {
+    box-shadow: 0 3px 6px 0 #d9daf2;
+    background-image: linear-gradient(to bottom, white, white);
+    text-align: center;
+    border-radius: 1em;
+    padding: 10px 45px 10px 45px;
+    transition: 20ms, 20ms transform;
+}
+
+.card-container:hover .card .card-title {
+    margin-top: 2em;
+    color: #6d708d;
+}
+
+.card-container:hover .card .price {
+    color: #494c5f;
+    font-size: 4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.35em;
+}
+
+.card-container:hover .card .card-info {
+    padding: 15px 10px 15px 10px;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: hsl(234, 14%, 88%);
+    color: #707188;
+}
+
+.card-container:hover .card .link_bttn {
+    border-radius: 0.3em;
+    text-decoration: none;
+    padding: 9px 60px 9px 60px;
+    background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+    color: white;
+    font-size: 15px;
+}
+
+.card-container:hover .card .card-bnttn {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.card-container:hover .card:hover {
+    background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+    padding: 40px;
+}
+
+.card-container:hover .card:hover .card-title {
+    color: white;
+}
+
+.card-container:hover .card:hover .card-info {
+    color: white;
+    border-width: 0.1px;
+    border-color: #a3a8f0;
+}
+
+.card-container:hover .card:hover .price {
+    color: white;
+}
+
+.card-container:hover .card:hover .link_bttn {
+    color: #696fdd;
+    background-image: linear-gradient(to bottom, white, white);
+}
+
+@media screen and (min-width: 1500px) {
+    .content-wrapper {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .card-container .card .link_bttn {
+        padding: 9px 30px 9px 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .first-title {
+        font-size: 1.6em;
+    }
+    .card-container {
+        flex-direction: column;
+        margin: 2em 6em 2em 6em;
+    }
+    .card-container .card {
+        margin-bottom: 1em;
+        max-width: 300px;
+    }
+    .card-container .card .card-info {
+        padding: 8px;
+    }
+    .card-container .card .price {
+        font-size: 2em;
+    }
+    .card-container .card .price .currency {
+        font-size: 0.5em;
+        vertical-align: 5px;
+    }
+    .card-container .card .link_bttn {
+        padding: 9px 30px 9px 30px;
+    }
+    .card-container .active-card {
+        padding: 40px 50px;
+    }
+    .card-container:hover .card {
+        margin-bottom: 1em;
+        max-width: 300px;
+    }
+    .card-container:hover .card .card-info {
+        padding: 6px;
+    }
+    .card-container:hover .card .price {
+        font-size: 2em;
+    }
+    .card-container:hover .card .link_bttn {
+        padding: 9px 30px 9px 30px;
+    }
+    .card-container:hover .card:hover {
+        margin-bottom: 1em;
+        padding: 40px 50px 40px 50px;
+    }
+    .bottom-carve-container {
+        display: none;
+    }
+    .top-carve {
+        width: 160px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .first-title {
+        font-size: 0.5em;
+    }
+    .card-container {
+        flex-direction: column;
+        margin: 1em 2em 1em 2em;
+    }
+    .top-carve {
+        display: none;
+    }
+    .first-title {
+        font-size: 1.3em;
+    }
+}

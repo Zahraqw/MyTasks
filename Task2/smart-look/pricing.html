@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="top-carve-container">
+        <img src="assets/bg-top.svg" class="top-carve" />
+    </div>
+    <div class="bottom-carve-container">
+        <img src="assets/bg-bottom.svg" />
+    </div>
+    <div class="content-wrapper">
+        <div class="page-head">
+            <h1 class="first-title">Our Pricing</h1>
+            <div class="header-block">
+                <div class="annual-warpper">Annually</div>
+                <label class="switch">
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+                <div class="monthly-wrapper">Monthly</div>
+            </div>
+        </div>
+        <div class="card-container" id="monthly">
+            <div class="card">
+                <div class="card-title"><b>Basic</b></div>
+                <div class="price"><strong><span class="currency">$</span>19.99</strong></div>
+                <div class="card-info">500 GB Storage</div>
+                <div class="card-info">2 Useres Allowed</div>
+                <div class="card-info" style="border-bottom-style: solid;">Send up to 3 GB</div>
+                <div class="card-bnttn">
+                    <a href="#" class="link_bttn"><b>LEARN MORE</b></a>
+                </div>
+            </div>
+            <div class="card active-card">
+                <div class="card-title"><b>Proffessional</b></div>
+                <div class="price"><strong><span class="currency">$</span>24.99</strong></div>
+                <div class="card-info">1 TB Storage</div>
+                <div class="card-info">5 Useres Allowed</div>
+                <div class="card-info" style="border-bottom-style: solid;">Send up to 10 GB</div>
+                <div class="card-bnttn">
+                    <a href="#" class="link_bttn"><b>LEARN MORE</b></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title"><b>Master</b></div>
+                <div class="price"><strong><span class="currency">$</span>39.99</strong></div>
+                <div class="card-info">2 TB Storage</div>
+                <div class="card-info">10 Useres Allowed</div>
+                <div class="card-info" style="border-bottom-style:solid;">Send up to 20 GB</div>
+                <div class="card-bnttn">
+                    <a href="#" class="link_bttn"><b>LEARN MORE</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container" id="annually" style="display:none">
+            <div class="card">
+                <div class="card-title"><b>Basic</b></div>
+                <div class="price"><strong><span class="currency">$</span>199.99</strong></div>
+                <div class="card-info">500 GB Storage</div>
+                <div class="card-info">2 Useres Allowed</div>
+                <div class="card-info" style="border-bottom-style: solid;">Send up to 3 GB</div>
+                <div class="card-bnttn">
+                    <a href="#" class="link_bttn"><b>LEARN MORE</b></a>
+                </div>
+            </div>
+            <div class="card active-card">
+                <div class="card-title"><b>Proffessional</b></div>
+                <div class="price"><strong><span class="currency">$</span>249.99</strong></div>
+                <div class="card-info">1 TB Storage</div>
+                <div class="card-info">5 Useres Allowed</div>
+                <div class="card-info" style="border-bottom-style: solid;">Send up to 10 GB</div>
+                <div class="card-bnttn">
+                    <a href="#" class="link_bttn"><b>LEARN MORE</b></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title"><b>Master</b></div>
+                <div class="price"><strong><span class="currency">$</span>399.99</strong></div>
+                <div class="card-info">2 TB Storage</div>
+                <div class="card-info">10 Useres Allowed</div>
+                <div class="card-info" style="border-bottom-style:solid;">Send up to 20 GB</div>
+                <div class="card-bnttn">
+                    <a href="#" class="link_bttn"><b>LEARN MORE</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("monthly");
+            var y = document.getElementById("annually");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+                y.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
