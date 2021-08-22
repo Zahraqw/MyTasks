@@ -239,6 +239,16 @@ body {
     background-image: linear-gradient(to bottom, white, white);
 }
 
+@media screen and (min-width: 1500px) {
+    .content-wrapper {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .card-container .card .link_bttn {
         padding: 9px 30px 9px 30px;
